@@ -1,0 +1,7 @@
+Here are the cordite details. Plug them into the code:
+
+Rectangle Tool: (657, 103)
+Outline → Solid Color: (868, 224)
+Fill → No Fill: (884, 222)
+Red Color swatch: (1079, 104)
+Size dropdown → 5px: (882, 313)

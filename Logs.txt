@@ -1,0 +1,78 @@
+PS D:\CursorProjects\Assignment4\Assignment4_AgenticUse> python talk2mcp_Neeresh.py
+Starting main execution...
+Establishing connection to MCP server...
+Connection established, creating session...
+Session created, initializing...
+Requesting tool list...
+Successfully retrieved 2 tools
+Creating system prompt...
+Number of tools: 2
+Added description for tool: 1. add_text_in_paint(text: string) - Add text inside the centered rectangle, save and close Paint
+Added description for tool: 2. open_paint() - Open Microsoft Paint in maximized (fullscreen) window    
+Successfully created tools description 1. add_text_in_paint(text: string) - Add text inside the centered rectangle, save and close Paint
+2. open_paint() - Open Microsoft Paint in maximized (fullscreen) window
+Created system prompt...
+Starting iteration loop...
+
+--- Iteration 1 ---
+Preparing to generate LLM response...
+Starting LLM generation...
+LLM generation completed
+LLM Response: FUNCTION_CALL: open_paint
+line in response_text11111111: FUNCTION_CALL: open_paint
+
+DEBUG: Raw function info:  open_paint
+DEBUG: Split parts: ['open_paint']
+DEBUG: Function name: open_paint
+DEBUG: Raw parameters: []
+DEBUG: Found tool: open_paint
+DEBUG: Tool schema: {'properties': {}, 'title': 'open_paintArguments', 'type': 'object'}
+DEBUG: Schema properties: {}
+DEBUG: Final arguments: {}
+DEBUG: Calling tool open_paint
+DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "Paint opened in full screen.", "annotations": null}]}', annotations=None)] isError=False
+DEBUG: Result has content attribute
+DEBUG: Final iteration result: ['{"content": [{"type": "text", "text": "Paint opened in full screen.", "annotations": null}]}']
+
+--- Iteration 2 ---
+Preparing to generate LLM response...
+Starting LLM generation...
+LLM generation completed
+LLM Response: FUNCTION_CALL: add_text_in_paint|INDIA
+line in response_text11111111: FUNCTION_CALL: add_text_in_paint|INDIA
+
+DEBUG: Raw function info:  add_text_in_paint|INDIA
+DEBUG: Split parts: ['add_text_in_paint', 'INDIA']
+DEBUG: Function name: add_text_in_paint
+DEBUG: Raw parameters: ['INDIA']
+DEBUG: Found tool: add_text_in_paint
+DEBUG: Tool schema: {'properties': {'text': {'title': 'Text', 'type': 'string'}}, 'required': ['text'], 'title': 'add_text_in_paintArguments', 'type': 'object'}
+DEBUG: Schema properties: {'text': {'title': 'Text', 'type': 'string'}}
+DEBUG: Converting parameter text with value INDIA to type string
+DEBUG: Final arguments: {'text': 'INDIA'}
+DEBUG: Calling tool add_text_in_paint
+DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "Error: ", "annotations": null}]}', annotations=None)] isError=False
+DEBUG: Result has content attribute
+DEBUG: Final iteration result: ['{"content": [{"type": "text", "text": "Error: ", "annotations": null}]}']
+
+--- Iteration 3 ---
+Preparing to generate LLM response...
+Starting LLM generation...
+LLM generation completed
+LLM Response: FUNCTION_CALL: add_text_in_paint|INDIA
+line in response_text11111111: FUNCTION_CALL: add_text_in_paint|INDIA
+
+DEBUG: Raw function info:  add_text_in_paint|INDIA
+DEBUG: Split parts: ['add_text_in_paint', 'INDIA']
+DEBUG: Function name: add_text_in_paint
+DEBUG: Raw parameters: ['INDIA']
+DEBUG: Found tool: add_text_in_paint
+DEBUG: Tool schema: {'properties': {'text': {'title': 'Text', 'type': 'string'}}, 'required': ['text'], 'title': 'add_text_in_paintArguments', 'type': 'object'}
+DEBUG: Schema properties: {'text': {'title': 'Text', 'type': 'string'}}
+DEBUG: Converting parameter text with value INDIA to type string
+DEBUG: Final arguments: {'text': 'INDIA'}
+DEBUG: Calling tool add_text_in_paint
+DEBUG: Raw result: meta=None content=[TextContent(type='text', text='{"content": [{"type": "text", "text": "Error: ", "annotations": null}]}', annotations=None)] isError=False
+DEBUG: Result has content attribute
+DEBUG: Final iteration result: ['{"content": [{"type": "text", "text": "Error: ", "annotations": null}]}']
+PS D:\CursorProjects\Assignment4\Assignment4_AgenticUse>
