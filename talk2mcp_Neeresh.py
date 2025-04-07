@@ -28,7 +28,7 @@ client = genai.GenerativeModel("gemini-2.0-flash")
 # client = genai.Client(api_key=api_key)
 
 
-max_iterations = 3
+max_iterations = 2
 last_response = None
 iteration = 0
 iteration_response = []
